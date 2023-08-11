@@ -44,7 +44,7 @@ export default function App() {
           ...new Map(sortedData.map((item) => [item.dt_txt, item])).values(),
         ];
 
-        //setting data in required format
+        //setting data in required format ..
         const updatedData = uniqueDateWeatherInfo?.map((weather) => {
           return {
             date: new Date(weather.dt_txt).toLocaleDateString(),
